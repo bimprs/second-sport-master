@@ -10,6 +10,7 @@ import ModalTawar from './components/buyer/modaltawar/modaltawar';
 import ModalStatus from './components/seller/modalstatus/modalstatus';
 import HalamanProdukBuyer from './pages/halproduk/buyer/halamanProdukBuyer';
 import HalamanProdukSeller from './pages/halproduk/seller/halamanProdukSeller';
+import ButtonGoogleAuth from './components/buttonGoogleAuth'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path = "/modalstatus" element={<ModalStatus />} />
       <Route path = "/halprodukbuyer" element={<HalamanProdukBuyer/>} />
       <Route path = "/halprodukseller" element={<HalamanProdukSeller />} />
+      <Route path = "/googleAuth" element={<ButtonGoogleAuth/>} />
       <Route path="*" element= "Error : Halaman Tidak Tersedia" />
     </Routes>
   );

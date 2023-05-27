@@ -1,9 +1,9 @@
 import React from'react'
-import PopUp from '../../../components/PopUp';
+// import PopUp from '../../../components/PopUp';
 import Navbar from '../../../components/Navbar';
 
 import { Container, VStack, Box } from '@chakra-ui/layout';
-import {  Image,  Grid, GridItem, SimpleGrid, Button, Text,} from "@chakra-ui/react"
+import {  Image,  Grid, GridItem, SimpleGrid, Button, Text, Flex} from "@chakra-ui/react"
 import G2 from "../../../assets/Rectangle134.png"
 import G3 from "../../../assets/Rectangle33.png"
 
@@ -13,8 +13,9 @@ return (
     <VStack>
 <Navbar></Navbar>
 {/* <NavbarMob></NavbarMob> */}
-
+<Flex >
 <SimpleGrid columns={2} >
+
 <Box w={'600px'} h={'436px'} my={'40px'} ml={'132px'} borderRadius={'16px'}><Image src={G2}/>       
 <Container my={'24px'} w={'600px'} h={'436px'} boxShadow={'md'}>
     <Text fontWeight={'Bold'}>Deskripsi</Text>
@@ -37,7 +38,7 @@ return (
     <Text ml={'24px'} fontWeight={'semibold'} my={'16px'}>Rp. 250.000
 </Text>
     </div>
-    <Button color={'#FFFF'} colorScheme='purple' w={'304px'} h={'48px'} borderRadius={'16px'} my={'8px'} ml={'16px'}>Saya tertarik dan saya ingin nego</Button>
+    <Button color={'#FFFF'} colorScheme={'orange'} bg='#F57B51' w={'304px'} h={'48px'} borderRadius={'16px'} my={'8px'} ml={'16px'}>Saya tertarik dan saya ingin nego</Button>
     {/* <div>
     <Button color={'black'}colorScheme='white' variant={'outline'}  w={'304px'} h={'48px'} borderRadius={'16px'} ml={'16px'} >Edit</Button></div> */}
   {/* <Image src={G3}/> */}
@@ -48,8 +49,8 @@ return (
 </Grid>
     </Box>
     </Box>
-
 </SimpleGrid>
+</Flex>
 
 {/* 
     <Navbar>

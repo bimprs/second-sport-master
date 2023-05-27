@@ -4,7 +4,7 @@ import {
     AlertIcon,
     AlertTitle,
     AlertDescription,
-Button, useDisclosure, Modal, ModalOverlay, ModalContent, ModalBody,  ModalCloseButton,  IconButton} from '@chakra-ui/react'
+Button, useDisclosure, Modal, ModalOverlay, ModalContent, ModalBody,  ModalCloseButton,  IconButton, Flex} from '@chakra-ui/react'
 
 import { FaRegBell } from 'react-icons/fa'
 
@@ -14,6 +14,7 @@ import { FaRegBell } from 'react-icons/fa'
         const btnRef = React.useRef()
         return (
           <>
+          <Flex>
             <Button ref={btnRef} colorScheme='white' onClick={onOpen}>
             <IconButton my={27} 
             icon={<FaRegBell/>} color='black' background>
@@ -35,6 +36,7 @@ import { FaRegBell } from 'react-icons/fa'
 
               </ModalContent>
             </Modal>
+            </Flex>
           </>
         )
       }

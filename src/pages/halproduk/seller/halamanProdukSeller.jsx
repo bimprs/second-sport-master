@@ -3,7 +3,7 @@ import Navbar from '../../../components/Navbar';
 import PopUp from '../../../components/PopUp';
 
 import { Container, VStack, Box } from '@chakra-ui/layout';
-import { Image, Grid, GridItem, SimpleGrid, Button, Text } from "@chakra-ui/react"
+import { Image, Grid, GridItem, SimpleGrid, Button, Text,Flex } from "@chakra-ui/react"
 import G2 from "../../../assets/Rectangle134.png"
 import G3 from "../../../assets/Rectangle33.png"
 function halamanProdukSeller() {
@@ -15,6 +15,7 @@ return (
 {/* <PopUp></PopUp> */}
 {/* <Notification></Notification> */}
 
+<Flex>
 <SimpleGrid columns={2} >
 <Box w={'600px'} h={'436px'} my={'40px'} ml={'132px'} borderRadius={'16px'}><Image src={G2}/>       
 <Container my={'24px'} w={'600px'} h={'436px'} boxShadow={'md'}>
@@ -50,7 +51,7 @@ return (
     
     </Box>
 </SimpleGrid>
-
+</Flex>
 
     </VStack>
 

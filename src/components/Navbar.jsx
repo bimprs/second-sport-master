@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex, Heading } from '@chakra-ui/layout';
-import { IconButton, Image, Input, InputGroup, InputRightElement} from "@chakra-ui/react"
+import { IconButton, Image, Input, InputGroup, InputRightElement, } from "@chakra-ui/react"
 import { FaSistrix, FaRegUser } from 'react-icons/fa'
 import G1 from "../assets/Rectangle127.png"
 import NavbarMob from './NavbarMob'
@@ -8,9 +8,9 @@ import Notification from './Notification'
 
 function Navbar() {
     return(
-    <Flex w={"1440px"} boxShadow={'md'} h={'84px'}>
+    <Flex w={"1440px"} boxShadow={'md'} h={'84px'} bg=''>
             <Heading>
-                <Image ml={136} my={27} w={"100px"} h={"34px"} src={G1}/>
+                <Image ml={136} my={27} w={"100px"} h={"34px"} bg='#F57B51'/>
             </Heading>
 
         <InputGroup h={"20px"} w={"444px"} ml={"24px"} my={"24px"} borderRadius="16px" backgroundColor={'#EEEEEE'}>

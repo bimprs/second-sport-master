@@ -18,16 +18,23 @@ import {
     Image
   } from '@chakra-ui/react'
 
+import ReactWhatsapp from 'react-whatsapp'
+
+
   import {FaWhatsapp} from 'react-icons/fa'
   import G3 from "../assets/Rectangle34.png"
 import G4 from "../assets/Rectangle35.png"
+
+const App = () => (
+  <ReactWhatsapp number="1-212-736-5000" message="Hello World!!!" />
+);
 
     function PopUp() {
         const { isOpen, onOpen, onClose } = useDisclosure()
       
         return (
           <>
-<Button onClick={onOpen} color={'#FFFF'} colorScheme='purple' w={'304px'} h={'48px'} borderRadius={'16px'} my={'8px'} ml={'16px'}>Terbitkan</Button>
+<Button onClick={onOpen} color={'#FFFF'} colorScheme='orange' bg='#F57B51' w={'304px'} h={'48px'} borderRadius={'16px'} my={'8px'} ml={'16px'}>Terbitkan</Button>
     
       
             <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
@@ -82,7 +89,7 @@ import G4 from "../assets/Rectangle35.png"
         </Stack>
 
 
-        <Center><Button my={'24px'} placeContent={'center'} bgColor={'#7126B5'} borderRadius={'16px'} rightIcon={<FaWhatsapp/>} colorScheme='White' w={'296px'} h={'48px'}>
+        <Center><Button my={'24px'} placeContent={'center'} bgColor={'#F57B51'} borderRadius={'16px'} rightIcon={<FaWhatsapp/>} colorScheme='White' w={'296px'} h={'48px'}>
     Hubungi via whatsapp
   </Button></Center>
         </Box>

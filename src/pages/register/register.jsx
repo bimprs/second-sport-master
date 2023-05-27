@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { ViewIcon } from '@chakra-ui/icons';
 import { ViewOffIcon } from '@chakra-ui/icons';
 
+
 const Register = () => {
     const [open, setOpen] = useState(false)
     const toggle = () => {
@@ -60,6 +61,7 @@ const Register = () => {
                 <Button mt={{base:"15px", md:"25px"}} fontSize="md" borderRadius="10" bg="#ff7d55" variant='solid' w="100%" color="white" colorScheme='orange'>Daftar</Button>
                 <FormLabel textAlign="center" color="#235d8f">Sudah punya akun?
                 <Button mt={{base:"15px", md:"10px"}} colorScheme='orange' variant='link' w="120px" onClick={handleOnClick}> Daftar di sini </Button> 
+                <Button mt={{base:"15px", md:"10px"}} colorScheme='orange' variant='link' w="120px" onClick={handleOnClick}> Masuk dengan google </Button> 
                 </FormLabel>
             </Box>
             </Stack>

@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { ViewIcon } from '@chakra-ui/icons';
 import { ViewOffIcon } from '@chakra-ui/icons';
 
+
 const Login = () => {
     const [open, setOpen] = useState(false)
     const toggle = () => {
@@ -20,8 +21,9 @@ const Login = () => {
     const handleClick = () => setShow(!show)
 
     return (
+
     <HStack w="full" h="100vh">
-        <Flex w="full" h="full" borderRightWidth={1} display={{base: 'none', md:'flex'}}>
+<Flex w="full" h="full" borderRightWidth={1} display={{base: 'none', md:'flex'}}>
             <Image 
             objectFit="cover" 
             w="full" 
